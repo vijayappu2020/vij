@@ -519,13 +519,13 @@ except Exception:
     pass
 while True:
     pn = ""
-    cc = input("\tEnter Your Country Code (Without +) : ")
+    cc = 91
     if '+' in cc:
         tc = list(cc)
         tc.remove('+')
         cc = ''.join(tc)
         cc = cc.strip()
-    pn = input("\tEnter Target Number: +" + cc + " ")
+    pn = 7871716004
     pn = remsp(pn)
     if len(cc) >= 4 or len(cc) < 1:
         print('\n\nInvalid Country Code..\n\t\tCountry Codes Are Generally 1-3 digits...\n')
